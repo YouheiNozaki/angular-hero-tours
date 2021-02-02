@@ -8,4 +8,13 @@
   </li>
 </ul>
 
+<div>
+  <label>Hero name:
+    <input #heroName />
+  </label>
+  <!-- (click) 入力値をadd()に渡したあと、入力をクリアする -->
+  <button (click)="add(heroName.value); heroName.value=''">
+    add
+  </button>
+</div>
 
